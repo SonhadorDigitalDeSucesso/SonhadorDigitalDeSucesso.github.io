@@ -1,0 +1,827 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IA para Renda Extra Imediata | Aprenda a Usar ChatGPT para Conseguir Clientes</title>
+
+    <meta name="description" content="Aprenda como usar ChatGPT e ferramentas gratuitas para criar serviços, encontrar potenciais clientes e começar a explorar novas oportunidades de renda online.">
+    <meta name="keywords" content="renda extra, inteligência artificial, ChatGPT, renda extra com IA, ganhar dinheiro com IA, trabalhar com IA, serviços com ChatGPT, renda online, ferramentas de IA">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="IA para Renda Extra Imediata">
+    <meta property="og:description" content="Aprenda a usar ChatGPT e ferramentas gratuitas para criar serviços e buscar seus primeiros clientes.">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07110f;
+            color: #f5f7f6;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 170, .15), transparent 30%),
+                radial-gradient(circle at 20% 80%, rgba(0, 190, 255, .08), transparent 30%),
+                #07110f;
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #19dca0;
+            border-radius: 50px;
+            color: #19dca0;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
+
+        h1 span {
+            color: #19dca0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #c5cfcc;
+            max-width: 760px;
+            margin: 0 auto 35px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 17px 32px;
+            background: #19dca0;
+            color: #03100c;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 800;
+            transition: .2s;
+            box-shadow: 0 10px 35px rgba(25, 220, 160, .18);
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+            background: #27efb0;
+        }
+
+        .small {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #87938f;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 55px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(32px, 5vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .section-title p {
+            color: #aebbb6;
+            font-size: 18px;
+        }
+
+        /* PROBLEM */
+
+        .problem {
+            background: #0a1714;
+        }
+
+        .problem-box {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .problem-box p {
+            font-size: 20px;
+            color: #c8d0cd;
+            margin-bottom: 20px;
+        }
+
+        /* BENEFITS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #0c1b17;
+            border: 1px solid #19352d;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #9eaaa6;
+        }
+
+        /* STEPS */
+
+        .steps {
+            background: #0a1714;
+        }
+
+        .step-list {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 25px;
+            padding: 25px 0;
+            border-bottom: 1px solid #1b302a;
+        }
+
+        .number {
+            min-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #19dca0;
+            color: #03100c;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .step h3 {
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #9eaaa6;
+        }
+
+        /* OFFER */
+
+        .offer {
+            text-align: center;
+        }
+
+        .offer-box {
+            max-width: 900px;
+            margin: auto;
+            padding: 55px 35px;
+            border-radius: 20px;
+            background:
+                linear-gradient(145deg, #0d211b, #091511);
+            border: 1px solid #1b473a;
+        }
+
+        .offer-box h2 {
+            font-size: clamp(32px, 5vw, 52px);
+            margin-bottom: 20px;
+        }
+
+        .offer-box p {
+            color: #b4c0bc;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        .checklist {
+            max-width: 650px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .checklist div {
+            padding: 10px 0;
+            color: #d9e2df;
+        }
+
+        .checklist span {
+            color: #19dca0;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* FAQ */
+
+        .faq {
+            background: #0a1714;
+        }
+
+        details {
+            max-width: 850px;
+            margin: 12px auto;
+            background: #0d1c18;
+            border: 1px solid #1b332c;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        details p {
+            color: #9fa9a6;
+            margin-top: 15px;
+        }
+
+        /* FINAL CTA */
+
+        .final {
+            text-align: center;
+            padding: 110px 0;
+        }
+
+        .final h2 {
+            font-size: clamp(35px, 6vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        .final p {
+            color: #aeb9b5;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 19px;
+        }
+
+        footer {
+            border-top: 1px solid #182b25;
+            padding: 30px 0;
+            text-align: center;
+            color: #687570;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 70px 0;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .step {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="badge">
+                GUIA PRÁTICO • INTELIGÊNCIA ARTIFICIAL
+            </div>
+
+            <h1>
+                IA PARA <span>RENDA EXTRA</span> IMEDIATA
+            </h1>
+
+            <p>
+                Descubra como utilizar o ChatGPT e ferramentas gratuitas
+                para criar serviços, aumentar sua produtividade e começar
+                a buscar seus primeiros clientes online.
+            </p>
+
+            <a href="https://hotmart.com/pt-br/marketplace/produtos/ia-para-renda-extra-imediata-como-conseguir-seus-primeiros-clientes-em-7-dias-usando-chatgpt-e-ferramentas-gratuitas/P106248063B?sck=HOTMART_PRODUCT_PAGE" class="cta">
+                QUERO CONHECER O MÉTODO →
+            </a>
+
+            <div class="small">
+                Aprenda • Teste • Execute • Evolua
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<section class="problem">
+
+    <div class="container">
+
+        <div class="problem-box">
+
+            <div class="section-title">
+
+                <h2>
+                    Você já conhece o ChatGPT.
+                    <br>
+                    Mas sabe <span>como transformá-lo em uma ferramenta de trabalho?</span>
+                </h2>
+
+            </div>
+
+            <p>
+                A Inteligência Artificial deixou de ser apenas uma novidade
+                tecnológica. Hoje, ferramentas como o ChatGPT podem ajudar
+                profissionais e pequenos negócios a produzir conteúdos,
+                organizar tarefas e executar diversos serviços.
+            </p>
+
+            <p>
+                O problema é que muita gente sabe que a IA existe,
+                mas não sabe <strong>o que oferecer, para quem oferecer
+                ou como começar.</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Um guia para transformar conhecimento em <span>ação</span>
+            </h2>
+
+            <p>
+                O IA PARA RENDA EXTRA IMEDIATA foi desenvolvido para
+                orientar quem quer começar a explorar oportunidades
+                utilizando Inteligência Artificial.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>ChatGPT na prática</h3>
+                <p>
+                    Aprenda maneiras mais estratégicas de utilizar o ChatGPT
+                    para aumentar sua produtividade e apoiar a execução de serviços.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Ideias de serviços</h3>
+                <p>
+                    Descubra possibilidades de serviços que podem ser realizados
+                    com auxílio de ferramentas de Inteligência Artificial.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Potenciais clientes</h3>
+                <p>
+                    Entenda como identificar pessoas e negócios que podem
+                    ter necessidades compatíveis com aquilo que você oferece.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>Como apresentar sua oferta</h3>
+                <p>
+                    Aprenda a organizar uma proposta de serviço de maneira
+                    simples, clara e profissional.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h3>Ferramentas gratuitas</h3>
+                <p>
+                    Conheça ferramentas que podem complementar seu fluxo
+                    de trabalho sem exigir grandes investimentos iniciais.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Plano de 7 dias</h3>
+                <p>
+                    Um roteiro para organizar seus primeiros passos,
+                    testar possibilidades e começar a executar.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="steps">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Do zero à execução em <span>7 dias</span>
+            </h2>
+
+            <p>
+                Um roteiro simples para evitar a paralisia causada pelo
+                excesso de informação.
+            </p>
+
+        </div>
+
+
+        <div class="step-list">
+
+            <div class="step">
+
+                <div class="number">1</div>
+
+                <div>
+                    <h3>Entenda as possibilidades da IA</h3>
+
+                    <p>
+                        Conheça formas de utilizar o ChatGPT para apoiar
+                        diferentes tipos de tarefas e serviços.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">2</div>
+
+                <div>
+                    <h3>Escolha uma direção</h3>
+
+                    <p>
+                        Identifique serviços que combinam com suas habilidades,
+                        interesses e com as necessidades do mercado.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">3</div>
+
+                <div>
+                    <h3>Monte sua oferta</h3>
+
+                    <p>
+                        Organize o que você pode entregar e como apresentar
+                        essa solução para potenciais clientes.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">4</div>
+
+                <div>
+                    <h3>Encontre potenciais clientes</h3>
+
+                    <p>
+                        Aprenda estratégias para identificar pessoas ou
+                        negócios que podem se beneficiar do seu serviço.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">5</div>
+
+                <div>
+                    <h3>Comece a prospectar</h3>
+
+                    <p>
+                        Coloque sua estratégia em prática e comece a
+                        conversar com potenciais clientes.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="offer">
+
+    <div class="container">
+
+        <div class="offer-box">
+
+            <h2>
+                O que você vai encontrar no material?
+            </h2>
+
+            <p>
+                Um guia direto ao ponto para quem quer entender como
+                utilizar Inteligência Artificial como ferramenta de trabalho.
+            </p>
+
+
+            <div class="checklist">
+
+                <div>
+                    <span>✓</span>
+                    Estratégias práticas com ChatGPT
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Ideias de serviços utilizando IA
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Estratégias para encontrar potenciais clientes
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Orientações para estruturar ofertas
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Ferramentas gratuitas
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Plano de execução de 7 dias
+                </div>
+
+            </div>
+
+
+            <a href="https://hotmart.com/pt-br/marketplace/produtos/ia-para-renda-extra-imediata-como-conseguir-seus-primeiros-clientes-em-7-dias-usando-chatgpt-e-ferramentas-gratuitas/P106248063B?sck=HOTMART_PRODUCT_PAGE" class="cta">
+                QUERO ACESSAR O GUIA →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Perguntas frequentes
+            </h2>
+
+        </div>
+
+
+        <details>
+
+            <summary>
+                Preciso saber programar?
+            </summary>
+
+            <p>
+                Não. O material foi pensado para iniciantes e apresenta
+                possibilidades de utilização do ChatGPT e ferramentas
+                gratuitas sem exigir conhecimentos avançados de programação.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Preciso comprar ferramentas caras?
+            </summary>
+
+            <p>
+                Não necessariamente. A proposta inclui o uso de ferramentas
+                gratuitas ou acessíveis para começar a explorar as possibilidades.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Vou ganhar dinheiro em 7 dias?
+            </summary>
+
+            <p>
+                Não existe garantia de ganhos. Os 7 dias representam o
+                plano de execução apresentado no material. Resultados
+                dependem de fatores como execução, oferta, demanda,
+                prospecção e dedicação de cada pessoa.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Para quem é esse material?
+            </summary>
+
+            <p>
+                Para pessoas que querem aprender a utilizar Inteligência
+                Artificial de forma prática e explorar possibilidades de
+                prestação de serviços e renda online.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Preciso ter experiência profissional?
+            </summary>
+
+            <p>
+                Não. O conteúdo busca orientar principalmente quem está
+                começando e ainda precisa descobrir como transformar
+                ferramentas de IA em uma oferta prática.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<section class="final">
+
+    <div class="container">
+
+        <h2>
+            O futuro do trabalho já está acontecendo.
+        </h2>
+
+        <p>
+            A diferença está em quem apenas observa as mudanças
+            e quem decide aprender a utilizar as novas ferramentas.
+        </p>
+
+        <a href="[SEU_LINK_DE_AFILIADO]" class="cta">
+            QUERO COMEÇAR AGORA →
+        </a>
+
+        <div class="small">
+            Acesso através da plataforma Hotmart.
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 IA para Renda Extra Imediata.
+            Conteúdo educacional sobre Inteligência Artificial e trabalho online.
+        </p>
+
+        <p style="margin-top: 8px;">
+            Este site não promete ganhos financeiros.
+            Resultados podem variar de acordo com dedicação,
+            estratégia, mercado e execução individual.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    // Rolagem suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+        link.addEventListener('click', function(e) {
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+        }); 
+
+    });
+
+</script>
+
+</body>
+</html>
