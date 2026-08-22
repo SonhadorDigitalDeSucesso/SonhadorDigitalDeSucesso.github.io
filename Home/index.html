@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sonhador Digital de Sucesso | IA, Programação, Finanças e Marketing</title>
+
+    <meta
+
+        name="description"
+
+        content="Sonhador Digital de Sucesso: conteúdos, ebooks, ferramentas e conhecimento sobre Inteligência Artificial, programação, finanças, marketing, produtividade e oportunidades digitais."
+
+    >
+
+    <meta
+
+        name="keywords"
+
+        content="Sonhador Digital de Sucesso, inteligência artificial, IA, ChatGPT, programação, finanças, marketing, produtividade, ebooks, renda extra, tecnologia"
+
+    >
+
+    <meta name="author" content="Sonhador Digital de Sucesso">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://sonhadordigitaldesucesso.github.io/">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="Sonhador Digital de Sucesso">
+
+    <meta
+
+        property="og:description"
+
+        content="Conhecimento, tecnologia e ferramentas para quem quer aprender, criar e evoluir no mundo digital."
+
+    >
+
+    <meta property="og:url" content="https://sonhadordigitaldesucesso.github.io/">
+
+    <meta property="og:site_name" content="Sonhador Digital de Sucesso">
+
+    <!-- Favicon -->
+
+    <link
+
+        rel="icon"
+
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E"
+
+    >
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+
+        rel="stylesheet"
+
+    >
+
+    <style>
+
+        :root {
+
+            --bg: #050807;
+
+            --bg-secondary: #09100e;
+
+            --card: #0c1512;
+
+            --card-hover: #101d19;
+
+            --text: #f4f7f5;
+
+            --muted: #9aa9a3;
+
+            --primary: #21e6a2;
+
+            --primary-dark: #13b97d;
+
+            --border: rgba(255,255,255,.08);
+
+            --container: 1160px;
+
+        }
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            background:
+
+                radial-gradient(
+
+                    circle at 10% 0%,
+
+                    rgba(33,230,162,.08),
+
+                    transparent 30%
+
+                ),
+
+                radial-gradient(
+
+                    circle at 90% 20%,
+
+                    rgba(33,230,162,.05),
+
+                    transparent 30%
+
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            font-family: "Inter", sans-serif;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+
+        }
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+
+        }
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+        .container {
+
+            width: min(var(--container), 92%);
+
+            margin: auto;
+
+        }
+
+        /* =========================
+
+           HEADER
+
+        ========================= */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            backdrop-filter: blur(18px);
+
+            background: rgba(5,8,7,.75);
+
+            border-bottom: 1px solid transparent;
+
+            transition: .3s ease;
+
+        }
+
+        header.scrolled {
+
+            border-bottom-color: var(--border);
+
+            background: rgba(5,8,7,.92);
+
+        }
+
+        .navbar {
+
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+        .logo {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+            letter-spacing: -.5px;
+
+        }
+
+        .logo span {
+
+            color: var(--primary);
+
+        }
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+        }
+
+        nav a {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            transition: .2s ease;
+
+        }
+
+        nav a:hover {
+
+            color: var(--text);
+
+        }
+
+        .nav-button {
+
+            padding: 10px 17px;
+
+            border-radius: 8px;
+
+            background: var(--primary);
+
+            color: #03100b;
+
+            font-weight: 700;
+
+        }
+
+        .nav-button:hover {
+
+            color: #03100b;
+
+            transform: translateY(-1px);
+
+        }
+
+        /* =========================
+
+           HERO
+
+        ========================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 140px 0 90px;
+
+            position: relative;
+
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns: 1.1fr .9fr;
+
+            align-items: center;
+
+            gap: 70px;
+
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 8px 13px;
+
+            border: 1px solid rgba(33,230,162,.2);
+
+            border-radius: 100px;
+
+            background: rgba(33,230,162,.05);
+
+            color: var(--primary);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 24px;
+
+        }
+
+        .eyebrow::before {
+
+            content: "";
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: var(--primary);
+
+            box-shadow: 0 0 12px var(--primary);
+
+        }
+
+        h1 {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: clamp(48px, 7vw, 82px);
+
+            line-height: .98;
+
+            letter-spacing: -3px;
+
+            margin-bottom: 28px;
+
+        }
+
+        h1 span {
+
+            color: var(--primary);
+
+        }
+
+        .hero-description {
+
+            color: var(--muted);
+
+            font-size: 19px;
+
+            max-width: 650px;
+
+            margin-bottom: 34px;
+
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+        }
+
+        .button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 14px 22px;
+
+            border-radius: 9px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: .25s ease;
+
+        }
+
+        .button-primary {
+
+            background: var(--primary);
+
+            color: #03100b;
+
+            box-shadow: 0 10px 30px rgba(33,230,162,.12);
+
+        }
+
+        .button-primary:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 15px 35px rgba(33,230,162,.2);
+
+        }
+
+        .button-secondary {
+
+            border: 1px solid var(--border);
+
+            background: rgba(255,255,255,.02);
+
+            color: var(--text);
+
+        }
+
+        .button-secondary:hover {
+
+            background: rgba(255,255,255,.06);
+
+            transform: translateY(-3px);
+
+        }
+
+        /* HERO VISUAL */
+
+        .hero-visual {
+
+            position: relative;
+
+            min-height: 470px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+        .visual-card {
+
+            width: 340px;
+
+            padding: 28px;
+
+            border-radius: 22px;
+
+            border: 1px solid rgba(255,255,255,.1);
+
+            background:
+
+                linear-gradient(
+
+                    145deg,
+
+                    rgba(22,42,35,.95),
+
+                    rgba(7,15,12,.95)
+
+                );
+
+            box-shadow:
+
+                0 35px 80px rgba(0,0,0,.45),
+
+                inset 0 1px rgba(255,255,255,.05);
+
+            transform: rotate(3deg);
+
+            position: relative;
+
+            z-index: 3;
+
+        }
+
+        .visual-top {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .visual-logo {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-weight: 700;
+
+        }
+
+        .visual-dot {
+
+            width: 10px;
+
+            height: 10px;
+
+            border-radius: 50%;
+
+            background: var(--primary);
+
+            box-shadow: 0 0 15px var(--primary);
+
+        }
+
+        .visual-title {
+
+            font-size: 31px;
+
+            line-height: 1.05;
+
+            font-family: "Space Grotesk", sans-serif;
+
+            margin-bottom: 20px;
+
+        }
+
+        .visual-title span {
+
+            color: var(--primary);
+
+        }
+
+        .visual-line {
+
+            height: 7px;
+
+            border-radius: 10px;
+
+            background: rgba(255,255,255,.08);
+
+            margin: 10px 0;
+
+        }
+
+        .visual-line.short {
+
+            width: 65%;
+
+        }
+
+        .visual-line.green {
+
+            width: 85%;
+
+            background: rgba(33,230,162,.55);
+
+        }
+
+        .floating-card {
+
+            position: absolute;
+
+            padding: 15px 18px;
+
+            border-radius: 12px;
+
+            background: #0c1713;
+
+            border: 1px solid var(--border);
+
+            box-shadow: 0 20px 45px rgba(0,0,0,.35);
+
+            font-size: 13px;
+
+            z-index: 5;
+
+        }
+
+        .floating-card strong {
+
+            display: block;
+
+            color: var(--primary);
+
+            font-size: 19px;
+
+        }
+
+        .float-one {
+
+            top: 45px;
+
+            right: 5px;
+
+            transform: rotate(-5deg);
+
+        }
+
+        .float-two {
+
+            bottom: 60px;
+
+            left: 5px;
+
+            transform: rotate(-5deg);
+
+        }
+
+        /* =========================
+
+           SECTION
+
+        ========================= */
+
+        section {
+
+            padding: 105px 0;
+
+        }
+
+        .section-header {
+
+            max-width: 750px;
+
+            margin-bottom: 55px;
+
+        }
+
+        .section-label {
+
+            color: var(--primary);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 12px;
+
+        }
+
+        h2 {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: clamp(34px, 5vw, 55px);
+
+            line-height: 1.08;
+
+            letter-spacing: -1.8px;
+
+            margin-bottom: 18px;
+
+        }
+
+        .section-description {
+
+            color: var(--muted);
+
+            font-size: 17px;
+
+            max-width: 680px;
+
+        }
+
+        /* =========================
+
+           ABOUT
+
+        ========================= */
+
+        .about {
+
+            background: var(--bg-secondary);
+
+            border-top: 1px solid var(--border);
+
+            border-bottom: 1px solid var(--border);
+
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: .8fr 1.2fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+        .about-box {
+
+            min-height: 340px;
+
+            border-radius: 20px;
+
+            border: 1px solid var(--border);
+
+            background:
+
+                linear-gradient(
+
+                    145deg,
+
+                    #0e1c17,
+
+                    #08100d
+
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 40px;
+
+            text-align: center;
+
+        }
+
+        .about-brand {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 48px;
+
+            font-weight: 700;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+
+        }
+
+        .about-brand span {
+
+            color: var(--primary);
+
+        }
+
+        .about-text p {
+
+            color: var(--muted);
+
+            margin-bottom: 18px;
+
+            font-size: 17px;
+
+        }
+
+        /* =========================
+
+           TOPICS
+
+        ========================= */
+
+        .topics {
+
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 15px;
+
+        }
+
+        .topic {
+
+            min-height: 180px;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            transition: .25s ease;
+
+        }
+
+        .topic:hover {
+
+            transform: translateY(-6px);
+
+            background: var(--card-hover);
+
+            border-color: rgba(33,230,162,.25);
+
+        }
+
+        .topic-icon {
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .topic h3 {
+
+            font-size: 17px;
+
+            margin-bottom: 7px;
+
+        }
+
+        .topic p {
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+        }
+
+        /* =========================
+
+           PRODUCTS
+
+        ========================= */
+
+        .products {
+
+            background: var(--bg-secondary);
+
+            border-top: 1px solid var(--border);
+
+            border-bottom: 1px solid var(--border);
+
+        }
+
+        .product-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+        .product {
+
+            padding: 30px;
+
+            border-radius: 17px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            display: flex;
+
+            flex-direction: column;
+
+            min-height: 290px;
+
+            transition: .25s ease;
+
+        }
+
+        .product:hover {
+
+            transform: translateY(-5px);
+
+            border-color: rgba(33,230,162,.25);
+
+        }
+
+        .product-tag {
+
+            color: var(--primary);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .product h3 {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 24px;
+
+            line-height: 1.15;
+
+            margin-bottom: 14px;
+
+        }
+
+        .product p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            flex: 1;
+
+            margin-bottom: 25px;
+
+        }
+
+        .product-link {
+
+            color: var(--primary);
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+        }
+
+        /* =========================
+
+           PHILOSOPHY
+
+        ========================= */
+
+        .quote {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+
+        }
+
+        .quote-mark {
+
+            color: var(--primary);
+
+            font-size: 65px;
+
+            font-family: Georgia, serif;
+
+            line-height: .5;
+
+            margin-bottom: 25px;
+
+        }
+
+        .quote blockquote {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: clamp(28px, 4vw, 45px);
+
+            line-height: 1.2;
+
+            letter-spacing: -1px;
+
+        }
+
+        .quote p {
+
+            color: var(--muted);
+
+            margin-top: 22px;
+
+        }
+
+        /* =========================
+
+           CTA
+
+        ========================= */
+
+        .final-cta {
+
+            padding: 100px 0;
+
+            text-align: center;
+
+            background:
+
+                radial-gradient(
+
+                    circle at center,
+
+                    rgba(33,230,162,.1),
+
+                    transparent 55%
+
+                );
+
+        }
+
+        .final-cta h2 {
+
+            max-width: 800px;
+
+            margin: 0 auto 20px;
+
+        }
+
+        .final-cta p {
+
+            color: var(--muted);
+
+            max-width: 650px;
+
+            margin: 0 auto 30px;
+
+        }
+
+        /* =========================
+
+           FOOTER
+
+        ========================= */
+
+        footer {
+
+            border-top: 1px solid var(--border);
+
+            padding: 40px 0;
+
+            background: #030605;
+
+        }
+
+        .footer-content {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 30px;
+
+            align-items: center;
+
+        }
+
+        .footer-brand {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-weight: 700;
+
+        }
+
+        .footer-brand span {
+
+            color: var(--primary);
+
+        }
+
+        .footer-text {
+
+            color: #69756f;
+
+            font-size: 12px;
+
+        }
+
+        .social {
+
+            display: flex;
+
+            gap: 10px;
+
+        }
+
+        .social a {
+
+            width: 38px;
+
+            height: 38px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            display: grid;
+
+            place-items: center;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition: .2s;
+
+        }
+
+        .social a:hover {
+
+            color: var(--primary);
+
+            border-color: rgba(33,230,162,.3);
+
+        }
+
+        /* =========================
+
+           RESPONSIVE
+
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            .hero-grid,
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .hero-content {
+
+                text-align: center;
+
+            }
+
+            .hero-description {
+
+                margin-left: auto;
+
+                margin-right: auto;
+
+            }
+
+            .hero-buttons {
+
+                justify-content: center;
+
+            }
+
+            .hero-visual {
+
+                min-height: 400px;
+
+            }
+
+            .topics {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .product-grid {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+
+                position: absolute;
+
+            }
+
+            nav {
+
+                display: none;
+
+            }
+
+            .navbar {
+
+                height: 65px;
+
+            }
+
+            .hero {
+
+                padding-top: 110px;
+
+            }
+
+            h1 {
+
+                letter-spacing: -2px;
+
+            }
+
+            .hero-visual {
+
+                transform: scale(.9);
+
+            }
+
+            .topics,
+
+            .product-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .about-grid {
+
+                gap: 35px;
+
+            }
+
+            .about-box {
+
+                min-height: 250px;
+
+            }
+
+            .about-brand {
+
+                font-size: 38px;
+
+            }
+
+            .footer-content {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+            .float-one {
+
+                right: -5px;
+
+            }
+
+            .float-two {
+
+                left: -5px;
+
+            }
+
+        }
+
+    </style>
+
+    <!-- Structured Data -->
+
+    <script type="application/ld+json">
+
+    {
+
+        "@context": "https://schema.org",
+
+        "@type": "WebSite",
+
+        "name": "Sonhador Digital de Sucesso",
+
+        "description": "Conteúdos e produtos digitais sobre Inteligência Artificial, programação, finanças, marketing e produtividade.",
+
+        "url": "https://sonhadordigitaldesucesso.github.io/"
+
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+<!-- =========================
+
+     HEADER
+
+========================= -->
+
+<header id="header">
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <a href="#" class="logo">
+
+                Sonhador<span>Digital</span>
+
+            </a>
+
+            <nav>
+
+                <a href="#sobre">Sobre</a>
+
+                <a href="#conteudos">Conteúdos</a>
+
+                <a href="#produtos">Produtos</a>
+
+                <a href="#contato">Contato</a>
+
+                <a
+
+                    href="https://linktr.ee/sonhadordigitaldesucesso"
+
+                    target="_blank"
+
+                    rel="noopener"
+
+                    class="nav-button"
+
+                >
+
+                    Ver conteúdos
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- =========================
+
+     HERO
+
+========================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <div>
+
+                <div class="eyebrow">
+
+                    CONHECIMENTO PARA O MUNDO DIGITAL
+
+                </div>
+
+                <h1>
+
+                    Sonhador
+
+                    <br>
+
+                    <span>Digital de Sucesso</span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Conteúdos, ideias e produtos digitais para quem quer
+
+                    aprender sobre tecnologia, Inteligência Artificial,
+
+                    programação, finanças, marketing e produtividade.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+
+                        href="https://linktr.ee/sonhadordigitaldesucesso"
+
+                        target="_blank"
+
+                        rel="noopener"
+
+                        class="button button-primary"
+
+                    >
+
+                        Explorar conteúdos →
+
+                    </a>
+
+                    <a
+
+                        href="#sobre"
+
+                        class="button button-secondary"
+
+                    >
+
+                        Conhecer o projeto
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="floating-card float-one">
+
+                    <strong>IA</strong>
+
+                    Tecnologia & inovação
+
+                </div>
+
+                <div class="visual-card">
+
+                    <div class="visual-top">
+
+                        <div class="visual-logo">
+
+                            SONHADOR DIGITAL
+
+                        </div>
+
+                        <div class="visual-dot"></div>
+
+                    </div>
+
+                    <div class="visual-title">
+
+                        Aprender.
+
+                        <br>
+
+                        Criar.
+
+                        <br>
+
+                        <span>Evoluir.</span>
+
+                    </div>
+
+                    <div class="visual-line green"></div>
+
+                    <div class="visual-line"></div>
+
+                    <div class="visual-line short"></div>
+
+                    <div class="visual-line"></div>
+
+                </div>
+
+                <div class="floating-card float-two">
+
+                    <strong>+ Conteúdo</strong>
+
+                    Conhecimento prático
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+
+     SOBRE
+
+========================= -->
+
+<section class="about" id="sobre">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-box">
+
+                <div class="about-brand">
+
+                    SONHADOR
+
+                    <br>
+
+                    <span>DIGITAL</span>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="section-header">
+
+                    <div class="section-label">
+
+                        O projeto
+
+                    </div>
+
+                    <h2>
+
+                        Mais do que produtos.
+
+                        <br>
+
+                        Uma jornada de aprendizado.
+
+                    </h2>
+
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+
+                        O <strong>Sonhador Digital de Sucesso</strong> nasceu
+
+                        da ideia de reunir conhecimento, ferramentas e
+
+                        conteúdos úteis para quem quer evoluir no ambiente
+
+                        digital.
+
+                    </p>
+
+                    <p>
+
+                        Aqui você encontra materiais voltados para
+
+                        Inteligência Artificial, programação, finanças,
+
+                        marketing, produtividade e novas possibilidades
+
+                        profissionais.
+
+                    </p>
+
+                    <p>
+
+                        A proposta é simples:
+
+                        <strong>
+
+                            aprender algo novo, transformar conhecimento
+
+                            em prática e continuar evoluindo.
+
+                        </strong>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+
+     CONTEÚDOS
+
+========================= -->
+
+<section id="conteudos">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+
+                Áreas de conteúdo
+
+            </div>
+
+            <h2>
+
+                Conhecimento para diferentes caminhos.
+
+            </h2>
+
+            <p class="section-description">
+
+                Explore conteúdos criados para acompanhar as principais
+
+                transformações do mundo digital e desenvolver novas
+
+                habilidades.
+
+            </p>
+
+        </div>
+
+        <div class="topics">
+
+            <div class="topic">
+
+                <div class="topic-icon">🤖</div>
+
+                <h3>Inteligência Artificial</h3>
+
+                <p>
+
+                    ChatGPT, ferramentas de IA, automação,
+
+                    produtividade e aplicações práticas.
+
+                </p>
+
+            </div>
+
+            <div class="topic">
+
+                <div class="topic-icon">💻</div>
+
+                <h3>Programação</h3>
+
+                <p>
+
+                    Java, Python, C, C++, desenvolvimento,
+
+                    arquitetura e tecnologia.
+
+                </p>
+
+            </div>
+
+            <div class="topic">
+
+                <div class="topic-icon">📈</div>
+
+                <h3>Finanças</h3>
+
+                <p>
+
+                    Educação financeira, investimentos,
+
+                    organização e construção de patrimônio.
+
+                </p>
+
+            </div>
+
+            <div class="topic">
+
+                <div class="topic-icon">📣</div>
+
+                <h3>Marketing</h3>
+
+                <p>
+
+                    Marketing digital, conteúdo, copywriting
+
+                    e estratégias para o ambiente online.
+
+                </p>
+
+            </div>
+
+            <div class="topic">
+
+                <div class="topic-icon">⚡</div>
+
+                <h3>Produtividade</h3>
+
+                <p>
+
+                    Organização, aprendizado, ferramentas
+
+                    e estratégias para produzir melhor.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+
+     PRODUTOS
+
+========================= -->
+
+<section class="products" id="produtos">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+
+                Produtos digitais
+
+            </div>
+
+            <h2>
+
+                Materiais para aprender e colocar em prática.
+
+            </h2>
+
+            <p class="section-description">
+
+                Ebooks, guias e materiais digitais desenvolvidos para
+
+                transformar assuntos complexos em conteúdos mais acessíveis
+
+                e aplicáveis.
+
+            </p>
+
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product">
+
+                <div class="product-tag">
+
+                    Inteligência Artificial
+
+                </div>
+
+                <h3>
+
+                    IA para Renda Extra Imediata
+
+                </h3>
+
+                <p>
+
+                    Aprenda como utilizar o ChatGPT e ferramentas gratuitas
+
+                    para estruturar serviços, encontrar potenciais clientes
+
+                    e começar a colocar a IA em prática.
+
+                </p>
+
+                <a
+
+                    href="https://hotmart.com/pt-br/marketplace/produtos/ia-para-renda-extra-imediata-como-conseguir-seus-primeiros-clientes-em-7-dias-usando-chatgpt-e-ferramentas-gratuitas/P106248063B?sck=HOTMART_PRODUCT_PAGE"
+
+                    target="_blank"
+
+                    rel="noopener"
+
+                    class="product-link"
+
+                >
+
+                    Conhecer o material →
+
+                </a>
+
+            </article>
+
+            <article class="product">
+
+                <div class="product-tag">
+
+                    Tecnologia
+
+                </div>
+
+                <h3>
+
+                    IA para Programadores
+
+                </h3>
+
+                <p>
+
+                    Conteúdo sobre como utilizar Inteligência Artificial
+
+                    como ferramenta de aprendizado, produtividade e
+
+                    desenvolvimento de software.
+
+                </p>
+
+                <a
+
+                    href="https://hotmart.com/pt-br/marketplace/produtos/do-zero-ao-programador-contratado-como-usar-inteligencia-artificial-para-aprender-mais-rapido-criar-um-portfolio-que-chama-atencao-e-conquistar-sua-primeira-vaga-na-programacao/G106975978H?sck=HOTMART_PRODUCT_PAGE"
+
+                    target="_blank"
+
+                    rel="noopener"
+
+                    class="product-link"
+
+                >
+
+                    Ver produtos →
+
+                </a>
+
+            </article>
+
+            <article class="product">
+
+                <div class="product-tag">
+
+                    Biblioteca digital
+
+                </div>
+
+                <h3>
+
+                    O Arsenal do Sucesso
+
+                </h3>
+
+                <p>
+
+                    Uma seleção de conteúdos digitais reunindo temas como
+
+                    IA, programação, finanças e marketing em um único lugar.
+
+                </p>
+
+                <a
+
+                    href="https://hotmart.com/pt-br/marketplace/produtos/biblioteca-digital-milionaria-ia-financas-e-marketing-em-um-so-lugar/I106288014K?sck=HOTMART_PRODUCT_PAGE"
+
+                    target="_blank"
+
+                    rel="noopener"
+
+                    class="product-link"
+
+                >
+
+                    Explorar →
+
+                </a>
+
+            </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:40px;">
+
+            <a
+
+                href="https://linktr.ee/sonhadordigitaldesucesso"
+
+                target="_blank"
+
+                rel="noopener"
+
+                class="button button-primary"
+
+            >
+
+                Ver todos os produtos →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+
+     FILOSOFIA
+
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="quote">
+
+            <div class="quote-mark">
+
+                “
+
+            </div>
+
+            <blockquote>
+
+                O objetivo não é saber tudo.
+
+                É continuar aprendendo o suficiente
+
+                para construir algo novo.
+
+            </blockquote>
+
+            <p>
+
+                — Sonhador Digital de Sucesso
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+
+     CTA
+
+========================= -->
+
+<section class="final-cta" id="contato">
+
+    <div class="container">
+
+        <div class="section-label">
+
+            Comece por aqui
+
+        </div>
+
+        <h2>
+
+            Explore os conteúdos e encontre
+
+            algo que faça sentido para você.
+
+        </h2>
+
+        <p>
+
+            Acesse a central de conteúdos do Sonhador Digital de Sucesso
+
+            e conheça os ebooks, materiais e projetos disponíveis.
+
+        </p>
+
+        <a
+
+            href="https://linktr.ee/sonhadordigitaldesucesso"
+
+            target="_blank"
+
+            rel="noopener"
+
+            class="button button-primary"
+
+        >
+
+            ACESSAR TODOS OS LINKS →
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- =========================
+
+     FOOTER
+
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-brand">
+
+                    Sonhador<span>Digital</span> de Sucesso
+
+                </div>
+
+                <div class="footer-text">
+
+                    Conhecimento para o mundo digital.
+
+                </div>
+
+            </div>
+
+            <div class="social">
+
+                <a
+
+                    href="https://linktr.ee/sonhadordigitaldesucesso"
+
+                    target="_blank"
+
+                    rel="noopener"
+
+                    aria-label="Linktree"
+
+                >
+
+                    LT
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div
+
+            class="footer-text"
+
+            style="margin-top:30px; text-align:center;"
+
+        >
+
+            © 2026 Sonhador Digital de Sucesso.
+
+            Todos os direitos reservados.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+
+    /*
+
+     * Efeito do cabeçalho ao rolar a página
+
+     */
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 30) {
+
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
+
+    });
+
+    /*
+
+     * Animação simples de entrada dos elementos
+
+     */
+
+    const observer = new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+
+                    entry.target.style.transform = "translateY(0)";
+
+                }
+
+            });
+
+        },
+
+        {
+
+            threshold: .1
+
+        }
+
+    );
+
+    document.querySelectorAll(
+
+        ".topic, .product, .about-box, .step"
+
+    ).forEach(element => {
+
+        element.style.opacity = "0";
+
+        element.style.transform = "translateY(20px)";
+
+        element.style.transition =
+
+            "opacity .6s ease, transform .6s ease";
+
+        observer.observe(element);
+
+    });
+
+</script>
+
+</body>
+
+</html>
