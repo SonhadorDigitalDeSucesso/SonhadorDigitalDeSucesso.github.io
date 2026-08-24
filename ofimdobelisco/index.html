@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O Fim do Belisco | Entenda seus Gatilhos e Recupere o Controle</title>
+
+    <meta name="description"
+          content="O Fim do Belisco é um ebook educativo para ajudar você a identificar gatilhos, diferenciar fome de vontade de comer e desenvolver estratégias mais conscientes para lidar com o belisco automático.">
+
+    <meta name="keywords"
+          content="fim do belisco, parar de beliscar, vontade de comer, fome emocional, gatilhos alimentares, comer por impulso, hábitos alimentares, consciência alimentar, ebook alimentação">
+
+    <meta name="author" content="Sonhador Digital de Sucesso">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="O Fim do Belisco">
+    <meta property="og:description"
+          content="Você não sente que está comendo tanto... mas quando percebe, passou o dia beliscando? Descubra estratégias para entender seus gatilhos e interromper o piloto automático.">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="canonical" href="https://sonhadordigitaldesucesso.github.io/ofimdobelisco/index.html">
+
+    <style>
+        :root {
+            --primary: #173f35;
+            --primary-dark: #0d2b24;
+            --secondary: #c99a45;
+            --cream: #faf7f0;
+            --white: #ffffff;
+            --text: #26332f;
+            --muted: #68736f;
+            --border: #e6e1d7;
+            --success: #2e765c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        header {
+            background: rgba(250, 247, 240, 0.96);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+        }
+
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 19px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: .2s;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 95px 0 80px;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(201,154,69,.14), transparent 30%),
+                linear-gradient(135deg, #faf7f0, #f1eee5);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: clamp(44px, 7vw, 76px);
+            line-height: .98;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+        }
+
+        .hero-text {
+            color: #53615c;
+            font-size: 19px;
+            max-width: 650px;
+            margin-bottom: 32px;
+        }
+
+        .cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--secondary);
+            color: #fff;
+            padding: 17px 30px;
+            border-radius: 9px;
+            font-weight: 800;
+            font-size: 17px;
+            box-shadow: 0 12px 30px rgba(150,108,40,.22);
+            transition: .25s;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 35px rgba(150,108,40,.30);
+        }
+
+        .small-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 14px;
+        }
+
+        .book {
+            background: var(--primary);
+            border-radius: 20px;
+            min-height: 430px;
+            padding: 42px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 25px 60px rgba(23,63,53,.20);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book::before {
+            content: "";
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: rgba(201,154,69,.16);
+            right: -100px;
+            top: -100px;
+        }
+
+        .book-label {
+            position: relative;
+            color: #dfbd79;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .book h2 {
+            position: relative;
+            font-size: 43px;
+            line-height: 1;
+            letter-spacing: -2px;
+            max-width: 300px;
+        }
+
+        .book p {
+            position: relative;
+            color: #d9e2de;
+            max-width: 300px;
+        }
+
+        /* PROBLEM */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            max-width: 760px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: var(--secondary);
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+        }
+
+        .section-title h2 {
+            color: var(--primary);
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin: 12px 0 16px;
+        }
+
+        .section-title p {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .problem {
+            background: white;
+        }
+
+        .quote-box {
+            max-width: 850px;
+            margin: auto;
+            padding: 38px;
+            border-left: 4px solid var(--secondary);
+            background: #faf8f3;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .quote-box p {
+            font-size: 21px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* BENEFITS */
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .benefit {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .check {
+            min-width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #e4eee9;
+            color: var(--success);
+            display: grid;
+            place-items: center;
+            font-weight: 900;
+        }
+
+        .benefit strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .benefit p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* BONUSES */
+
+        .bonuses {
+            background: var(--primary);
+            color: white;
+        }
+
+        .bonuses .section-title h2 {
+            color: white;
+        }
+
+        .bonuses .section-title p {
+            color: #cbd7d2;
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+        }
+
+        .bonus {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.1);
+            padding: 25px 18px;
+            border-radius: 12px;
+        }
+
+        .bonus-number {
+            color: #dfbd79;
+            font-weight: 900;
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+
+        .bonus h3 {
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        .bonus p {
+            color: #cbd7d2;
+            font-size: 13px;
+        }
+
+        /* HOW */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .step-number {
+            font-size: 38px;
+            font-weight: 900;
+            color: #dfbd79;
+            line-height: 1;
+            margin-bottom: 18px;
+        }
+
+        .step h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: var(--muted);
+        }
+
+        /* CTA */
+
+        .final-cta {
+            background: linear-gradient(135deg, #efe8d8, #faf7f0);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: var(--primary);
+            font-size: clamp(35px, 5vw, 54px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            max-width: 780px;
+            margin: auto auto 20px;
+        }
+
+        .final-cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+        /* FAQ */
+
+        .faq {
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        details {
+            border-bottom: 1px solid var(--border);
+            padding: 22px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 17px;
+        }
+
+        details p {
+            padding-top: 14px;
+            color: var(--muted);
+        }
+
+        /* DISCLAIMER */
+
+        .disclaimer {
+            background: #f1eee7;
+            padding: 45px 0;
+        }
+
+        .disclaimer p {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #69736e;
+            font-size: 12px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0d2b24;
+            color: #b9c6c1;
+            text-align: center;
+            padding: 35px 0;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .bonus-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .nav-btn {
+                padding: 9px 13px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .book {
+                min-height: 350px;
+                padding: 30px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bonus-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .quote-box {
+                padding: 25px;
+            }
+
+            .quote-box p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">
+            Sonhador <span>Digital de Sucesso</span>
+        </div>
+
+        <a href="#comprar" class="nav-btn">
+            Quero conhecer
+        </a>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div>
+                <span class="eyebrow">
+                    Um guia para sair do piloto automático
+                </span>
+
+                <h1>
+                    O Fim do <span>Belisco</span>
+                </h1>
+
+                <p class="hero-text">
+                    Você não sente que está comendo tanto...
+                    mas quando percebe, passou o dia beliscando?
+                    Descubra como entender seus gatilhos, reconhecer
+                    seus momentos de vulnerabilidade e criar uma pausa
+                    antes do próximo impulso.
+                </p>
+
+                <a href="#comprar" class="cta">
+                    Quero começar agora
+                </a>
+
+                <p class="small-note">
+                    Ebook digital + 5 bônus práticos
+                </p>
+            </div>
+
+            <div class="book">
+                <div class="book-label">
+                    SONHADOR DIGITAL DE SUCESSO
+                </div>
+
+                <div>
+                    <h2>
+                        O FIM<br>
+                        DO<br>
+                        BELISCO
+                    </h2>
+                </div>
+
+                <p>
+                    Entenda seus gatilhos.
+                    Reconheça seus padrões.
+                    Faça escolhas com mais consciência.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROBLEMA -->
+
+    <section class="problem">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Talvez você conheça este ciclo</span>
+
+                <h2>
+                    “É só um pedacinho.”
+                    Até que o dia inteiro virou pequenos beliscos.
+                </h2>
+
+                <p>
+                    Um doce enquanto trabalha. Um lanche diante da TV.
+                    Algo depois do almoço. Mais alguma coisa antes de dormir.
+                </p>
+            </div>
+
+            <div class="quote-box">
+                <p>
+                    Separadamente, cada escolha parece pequena.
+                    O problema é quando elas acontecem no automático,
+                    repetidamente, sem que você perceba o que desencadeou
+                    aquela vontade.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TRANSFORMAÇÃO -->
+
+    <section>
+        <div class="container">
+
+            <div class="section-title">
+                <span>O que você vai encontrar</span>
+
+                <h2>
+                    Mais consciência. Menos piloto automático.
+                </h2>
+
+                <p>
+                    O objetivo não é criar mais uma lista de proibições.
+                    É ajudar você a compreender o comportamento por trás
+                    daquele “só mais um”.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Identifique seus gatilhos</strong>
+                        <p>
+                            Perceba situações, horários e emoções que
+                            costumam anteceder seus beliscos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Fome ou vontade?</strong>
+                        <p>
+                            Aprenda a observar melhor a diferença entre
+                            uma necessidade física e um impulso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Conheça seus horários vulneráveis</strong>
+                        <p>
+                            Descubra em quais momentos do dia o piloto
+                            automático costuma aparecer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Crie uma pausa antes do impulso</strong>
+                        <p>
+                            Desenvolva estratégias para não agir
+                            imediatamente diante de uma vontade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Organize seu ambiente</strong>
+                        <p>
+                            Faça mudanças simples para diminuir estímulos
+                            que favorecem comportamentos automáticos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Lide melhor com doces e lanches</strong>
+                        <p>
+                            Observe padrões e construa estratégias mais
+                            conscientes para esses momentos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Enfrente a tarde e a noite</strong>
+                        <p>
+                            Tenha ferramentas práticas para os períodos
+                            em que os beliscos podem se tornar mais frequentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Abandone o “já estraguei tudo”</strong>
+                        <p>
+                            Aprenda a enxergar um deslize como informação,
+                            não como motivo para desistir.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- BÔNUS -->
+
+    <section class="bonuses">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Você também recebe</span>
+
+                <h2>
+                    5 bônus para transformar conhecimento em prática
+                </h2>
+
+                <p>
+                    Porque entender o comportamento é importante.
+                    Ter ferramentas para agir no dia a dia também.
+                </p>
+            </div>
+
+            <div class="bonus-grid">
+
+                <div class="bonus">
+                    <div class="bonus-number">BÔNUS 01</div>
+                    <h3>Planner dos 21 Dias</h3>
+                    <p>
+                        Uma estrutura para acompanhar seu processo
+                        e observar seus padrões.
+                    </p>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus-number">BÔNUS 02</div>
+                    <h3>Checklist dos Gatilhos</h3>
+                    <p>
+                        Identifique situações que podem estar
+                        estimulando seus beliscos.
+                    </p>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus-number">BÔNUS 03</div>
+                    <h3>Lista de Substituições</h3>
+                    <p>
+                        Ideias práticas para momentos em que surge
+                        aquela vontade de beliscar.
+                    </p>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus-number">BÔNUS 04</div>
+                    <h3>Lista de Compras</h3>
+                    <p>
+                        Uma lista prática para ajudar na organização
+                        do ambiente alimentar.
+                    </p>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus-number">BÔNUS 05</div>
+                    <h3>Cartão “Fome ou Vontade?”</h3>
+                    <p>
+                        Para salvar no celular e consultar
+                        quando aquele impulso aparecer.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MÉTODO -->
+
+    <section>
+        <div class="container">
+
+            <div class="section-title">
+                <span>Uma mudança começa com consciência</span>
+
+                <h2>
+                    O processo começa antes da comida.
+                </h2>
+
+                <p>
+                    Antes de tentar simplesmente “resistir”, você pode
+                    aprender a observar o que acontece no momento anterior.
+                </p>
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Observe</h3>
+                    <p>
+                        Perceba o que está acontecendo antes da vontade:
+                        horário, ambiente, emoção, situação e pensamento.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Crie uma pausa</h3>
+                    <p>
+                        Em vez de responder automaticamente ao impulso,
+                        crie alguns instantes para perceber sua decisão.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Escolha conscientemente</h3>
+                    <p>
+                        A proposta é substituir o piloto automático por
+                        decisões mais conscientes e alinhadas ao seu objetivo.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA FINAL -->
+
+    <section class="final-cta" id="comprar">
+        <div class="container">
+
+            <h2>
+                O próximo “só mais um” pode ser o momento em que você decide fazer diferente.
+            </h2>
+
+            <p>
+                Você não precisa começar com uma dieta cheia de regras.
+                Comece entendendo seus comportamentos, seus gatilhos
+                e os momentos em que o piloto automático aparece.
+            </p>
+
+          
+            <a href="https://pay.hotmart.com/O107298554R?sck=HOTMART_PRODUCT_PAGE&off=kltfegti&hotfeature=32" class="cta">
+                Quero acessar O Fim do Belisco
+            </a>
+
+            <p class="small-note">
+                Acesso ao ebook digital + 5 bônus práticos
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Dúvidas frequentes</span>
+
+                <h2>
+                    Antes de começar
+                </h2>
+            </div>
+
+            <div class="faq-list">
+
+                <details>
+                    <summary>
+                        O que é O Fim do Belisco?
+                    </summary>
+
+                    <p>
+                        É um ebook educativo desenvolvido para ajudar o leitor
+                        a compreender melhor os gatilhos e padrões relacionados
+                        ao ato de beliscar e desenvolver estratégias mais
+                        conscientes para lidar com esses momentos.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Preciso fazer uma dieta para utilizar o material?
+                    </summary>
+
+                    <p>
+                        Não. O material não foi desenvolvido como uma dieta
+                        ou plano alimentar. A proposta é trabalhar percepção,
+                        consciência e estratégias comportamentais.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        O ebook promete emagrecimento?
+                    </summary>
+
+                    <p>
+                        Não. O material não promete perda de peso ou resultados
+                        específicos. Ele apresenta conteúdo educativo sobre
+                        comportamento alimentar e percepção dos gatilhos.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        O material substitui acompanhamento profissional?
+                    </summary>
+
+                    <p>
+                        Não. O ebook é um material educativo e não substitui
+                        acompanhamento médico, nutricional ou psicológico
+                        individualizado.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Quais são os bônus?
+                    </summary>
+
+                    <p>
+                        Você recebe o Planner dos 21 Dias, Checklist dos
+                        Gatilhos, Lista de Substituições, Lista de Compras
+                        Prática e o Cartão “Fome ou Vontade?” para salvar
+                        no celular.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DISCLAIMER -->
+
+    <section class="disclaimer">
+        <div class="container">
+            <p>
+                <strong>Importante:</strong> O Fim do Belisco é um material
+                exclusivamente educativo. As informações apresentadas não
+                substituem avaliação, diagnóstico ou acompanhamento médico,
+                nutricional ou psicológico individualizado. Cada pessoa possui
+                necessidades diferentes. Em caso de dúvidas ou dificuldades
+                relacionadas à alimentação, procure um profissional qualificado.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <strong>Sonhador Digital de Sucesso</strong>
+        <br>
+        Conteúdo digital para aprendizado, desenvolvimento e transformação.
+        <br><br>
+        © 2026 Sonhador Digital de Sucesso. Todos os direitos reservados.
+    </div>
+</footer>
+
+
+<script>
+    // Scroll suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
