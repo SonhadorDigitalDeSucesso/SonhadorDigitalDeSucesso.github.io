@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coder: De Ideia a Produto com IA | Sonhador Digital de Sucesso</title>
+  <meta name="description" content="Aprenda a usar Inteligência Artificial para transformar ideias em aplicativos, ferramentas e pequenos SaaS. Conheça Vibe Coding, prompts, APIs, bancos de dados, deploy e monetização.">
+  <meta name="keywords" content="vibe coding, vibe coder, programação com IA, criar aplicativo com IA, criar SaaS com IA, inteligência artificial programação, desenvolvimento de software com IA, Cursor, Bolt, Replit, Supabase">
+  <meta name="author" content="Sonhador Digital de Sucesso">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sonhadordigitaldesucesso.github.io/vibecoder/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Vibe Coder: De Ideia a Produto com IA">
+  <meta property="og:description" content="Um guia prático para transformar ideias em produtos digitais usando Inteligência Artificial.">
+  <meta property="og:url" content="https://sonhadordigitaldesucesso.github.io/vibecoder/">
+  <meta property="og:site_name" content="Sonhador Digital de Sucesso">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vibe Coder: De Ideia a Produto com IA">
+  <meta name="twitter:description" content="Aprenda a criar, lançar e monetizar produtos digitais usando IA.">
+  <!-- Favicon -->
+  <link rel="icon" href="https://sonhadordigitaldesucesso.github.io/favicon.png">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Vibe Coder: De Ideia a Produto com IA",
+    "description": "Guia prático para criar, lançar e monetizar softwares utilizando Inteligência Artificial.",
+    "inLanguage": "pt-BR",
+    "author": {
+      "@type": "Organization",
+      "name": "Sonhador Digital de Sucesso"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sonhador Digital de Sucesso"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://pay.hotmart.com/F107872677P",
+      "priceCurrency": "BRL",
+      "price": "19.90",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <!-- Hotmart -->
+  <script>
+    function importHotmart(){
+      var imported = document.createElement('script');
+      imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+      document.head.appendChild(imported);
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+      document.head.appendChild(link);
+    }
+    importHotmart();
+  </script>
+  <style>
+    /* =========================
+       RESET
+    ========================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      background: #080b12;
+      color: #f5f7fb;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+    /* =========================
+       HEADER
+    ========================= */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 11, 18, .88);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .header-content {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -.4px;
+    }
+    .logo span {
+      color: #7c5cff;
+    }
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+    nav a {
+      color: #b8bfce;
+      font-size: .92rem;
+      transition: .2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .nav-button {
+      padding: 9px 17px;
+      border-radius: 8px;
+      background: #7c5cff;
+      color: #fff;
+      font-weight: 700;
+    }
+    .menu-button {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+    /* =========================
+       HERO
+    ========================= */
+    .hero {
+      padding: 95px 0 80px;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(124,92,255,.22),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 20% 70%,
+          rgba(0,200,255,.10),
+          transparent 30%
+        );
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 60px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid rgba(124,92,255,.4);
+      border-radius: 100px;
+      background: rgba(124,92,255,.1);
+      color: #b9aaff;
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.6rem);
+      line-height: 1.02;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+    h1 span {
+      background: linear-gradient(90deg, #9c82ff, #55d6ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero-text {
+      color: #aeb6c6;
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 25px;
+      border-radius: 9px;
+      background: #7c5cff;
+      font-weight: 800;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(124,92,255,.28);
+    }
+    .secondary {
+      border: 1px solid #2c3341;
+      background: #111620;
+      color: #dfe4ed;
+    }
+    /* =========================
+       PRODUCT CARD
+    ========================= */
+    .product-card {
+      padding: 35px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(124,92,255,.14),
+          rgba(255,255,255,.03)
+        );
+      box-shadow: 0 30px 90px rgba(0,0,0,.3);
+    }
+    .book-cover {
+      aspect-ratio: 3 / 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 35px;
+      border-radius: 12px;
+      background:
+        linear-gradient(
+          145deg,
+          #151028,
+          #0c1222
+        );
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow:
+        0 25px 50px rgba(0,0,0,.45);
+    }
+    .book-cover small {
+      color: #9c82ff;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .book-cover h2 {
+      font-size: 2rem;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+    .book-cover p {
+      color: #aab1c0;
+    }
+    /* =========================
+       SECTIONS
+    ========================= */
+    section {
+      padding: 90px 0;
+    }
+    .section-title {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -1.5px;
+      margin-bottom: 14px;
+    }
+    .section-title p {
+      color: #9da6b6;
+    }
+    /* =========================
+       BENEFITS
+    ========================= */
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .benefit {
+      padding: 27px;
+      background: #0e131d;
+      border: 1px solid #202734;
+      border-radius: 14px;
+      transition: transform .2s, border-color .2s;
+    }
+    .benefit:hover {
+      transform: translateY(-4px);
+      border-color: #4b3d86;
+    }
+    .benefit-icon {
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+    }
+    .benefit h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+    .benefit p {
+      color: #969faf;
+      font-size: .94rem;
+    }
+    /* =========================
+       CONTENT
+    ========================= */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 18px;
+    }
+    .chapter {
+      padding: 25px;
+      background: #0d121b;
+      border: 1px solid #202734;
+      border-radius: 12px;
+    }
+    .chapter strong {
+      color: #a994ff;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .chapter p {
+      color: #a1a9b7;
+    }
+    /* =========================
+       BONUS
+    ========================= */
+    .bonus {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(124,92,255,.12),
+          rgba(0,180,255,.05)
+        );
+    }
+    .bonus-list {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+    .bonus-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+    }
+    .bonus-item span {
+      font-size: 1.5rem;
+    }
+    .bonus-item p {
+      color: #adb4c1;
+    }
+    /* =========================
+       AUDIENCE
+    ========================= */
+    .audience {
+      max-width: 800px;
+      margin: auto;
+    }
+    .audience ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+    }
+    .audience li {
+      padding: 14px 16px;
+      background: #0e131d;
+      border: 1px solid #202734;
+      border-radius: 9px;
+      color: #c3c9d4;
+    }
+    .audience li::before {
+      content: "✓";
+      color: #8f78ff;
+      font-weight: 900;
+      margin-right: 8px;
+    }
+    /* =========================
+       OFFER
+    ========================= */
+    .offer {
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(124,92,255,.17),
+          transparent 55%
+        );
+    }
+    .offer-card {
+      max-width: 620px;
+      margin: auto;
+      padding: 45px 30px;
+      border-radius: 20px;
+      background: #0d121b;
+      border: 1px solid #2b3341;
+      box-shadow: 0 25px 70px rgba(0,0,0,.3);
+    }
+    .offer-card h2 {
+      font-size: 2.1rem;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 3.4rem;
+      font-weight: 900;
+      margin: 20px 0;
+    }
+    .price small {
+      font-size: 1rem;
+      color: #9098a7;
+      font-weight: 500;
+    }
+    .offer-note {
+      color: #8f98a8;
+      font-size: .88rem;
+      margin-top: 15px;
+    }
+    /* =========================
+       FAQ
+    ========================= */
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+    details {
+      background: #0e131d;
+      border: 1px solid #202734;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      padding: 18px 20px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    details p {
+      color: #9ea6b5;
+      padding-top: 14px;
+    }
+    /* =========================
+       FOOTER
+    ========================= */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid #202632;
+      text-align: center;
+      color: #777f8e;
+      font-size: .88rem;
+    }
+    /* =========================
+       FLOATING CTA
+    ========================= */
+    .floating-cta {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 900;
+      display: none;
+      background: #7c5cff;
+      padding: 13px 20px;
+      border-radius: 100px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    /* =========================
+       RESPONSIVE
+    ========================= */
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: #080b12;
+        flex-direction: column;
+        align-items: stretch;
+        border-bottom: 1px solid #202734;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-button {
+        display: block;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 65px;
+      }
+      .benefits {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      section {
+        padding: 65px 0;
+      }
+      h1 {
+        letter-spacing: -1.8px;
+      }
+      .benefits,
+      .content-grid,
+      .audience ul {
+        grid-template-columns: 1fr;
+      }
+      .product-card {
+        padding: 20px;
+      }
+      .book-cover {
+        padding: 25px;
+      }
+      .floating-cta {
+        display: block;
+      }
+      .hero-buttons .cta {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container header-content">
+<a href="#" class="logo">
+  Sonhador<span>Digital</span>
+</a>
+<button
+  class="menu-button"
+  id="menuButton"
+  aria-label="Abrir menu"
+  aria-expanded="false">
+  ☰
+</button>
+<nav id="nav">
+  <a href="#sobre">Sobre</a>
+  <a href="#conteudo">Conteúdo</a>
+  <a href="#bonus">Bônus</a>
+  <a href="#faq">FAQ</a>
+  <a
+    href="https://pay.hotmart.com/F107872677P?checkoutMode=2"
+    class="nav-button hotmart-fb hotmart__button-checkout"
+    onclick="return false;">
+    Quero conhecer
+  </a>
+</nav>
+  </div>
+</header>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+<div class="container hero-grid">
+  <div>
+    <div class="badge">
+      🤖 GUIA PRÁTICO DE VIBE CODING
+    </div>
+    <h1>
+      De uma <span>ideia</span> a um produto com IA.
+    </h1>
+    <p class="hero-text">
+      Aprenda como utilizar Inteligência Artificial para criar
+      aplicativos, ferramentas e pequenos SaaS — passando pela
+      ideia, desenvolvimento, debugging, deploy e monetização.
+    </p>
+    <div class="hero-buttons">
+      <a
+        href="https://pay.hotmart.com/F107872677P?checkoutMode=2"
+        class="cta hotmart-fb hotmart__button-checkout"
+        onclick="return false;">
+        🚀 Quero começar agora
+      </a>
+      <a href="#conteudo" class="cta secondary">
+        Ver conteúdo
+      </a>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="book-cover">
+      <small>VIBE CODER</small>
+      <h2>
+        DE IDEIA A<br>
+        PRODUTO<br>
+        COM IA
+      </h2>
+      <p>
+        O guia prático para criar,
+        lançar e monetizar softwares
+        utilizando Inteligência Artificial.
+      </p>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- SOBRE -->
+  <section id="sobre">
+<div class="container">
+  <div class="section-title">
+    <h2>
+      A forma de criar software está mudando.
+    </h2>
+    <p>
+      A Inteligência Artificial pode participar de várias etapas
+      do desenvolvimento. O Vibe Coding mostra como utilizar
+      essas ferramentas de forma prática e estruturada.
+    </p>
+  </div>
+  <div class="benefits">
+    <article class="benefit">
+      <div class="benefit-icon">💡</div>
+      <h3>Transforme ideias em MVPs</h3>
+      <p>
+        Aprenda a dividir uma ideia em pequenas partes
+        e construir uma primeira versão funcional.
+      </p>
+    </article>
+    <article class="benefit">
+      <div class="benefit-icon">🧠</div>
+      <h3>Prompts para programação</h3>
+      <p>
+        Entenda como fornecer contexto, instruções
+        e restrições para obter respostas mais úteis.
+      </p>
+    </article>
+    <article class="benefit">
+      <div class="benefit-icon">🔌</div>
+      <h3>APIs e integrações</h3>
+      <p>
+        Veja conceitos de APIs, bancos de dados,
+        autenticação e serviços externos.
+      </p>
+    </article>
+    <article class="benefit">
+      <div class="benefit-icon">🐛</div>
+      <h3>Debugging com IA</h3>
+      <p>
+        Utilize logs e mensagens de erro para
+        investigar problemas com auxílio da IA.
+      </p>
+    </article>
+    <article class="benefit">
+      <div class="benefit-icon">🌐</div>
+      <h3>Coloque seu projeto no ar</h3>
+      <p>
+        Conheça o processo de deploy utilizando
+        plataformas modernas.
+      </p>
+    </article>
+    <article class="benefit">
+      <div class="benefit-icon">💰</div>
+      <h3>Explore a monetização</h3>
+      <p>
+        Conheça modelos como Micro-SaaS,
+        assinatura e pagamento único.
+      </p>
+    </article>
+  </div>
+</div>
+  </section>
+  <!-- CONTEÚDO -->
+  <section id="conteudo">
+<div class="container">
+  <div class="section-title">
+    <h2>
+      O que você vai encontrar
+    </h2>
+    <p>
+      Um caminho organizado para sair da ideia
+      e chegar a uma aplicação publicada.
+    </p>
+  </div>
+  <div class="content-grid">
+    <article class="chapter">
+      <strong>01 — Fundamentos</strong>
+      <p>
+        Vibe Coding, ecossistema de ferramentas,
+        escolha de ideias e MVP.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>02 — Ferramentas de IA</strong>
+      <p>
+        Cursor, Bolt.new, v0.dev, Replit e
+        modelos de linguagem para programação.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>03 — Engenharia de Prompt</strong>
+      <p>
+        Como estruturar prompts para interfaces,
+        APIs e lógica de negócios.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>04 — Dados e Pagamentos</strong>
+      <p>
+        Supabase, Firebase, autenticação,
+        APIs de pagamento e variáveis de ambiente.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>05 — Debugging</strong>
+      <p>
+        Como investigar erros, corrigir problemas
+        e organizar o código com auxílio da IA.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>06 — Deploy</strong>
+      <p>
+        GitHub, Vercel, Netlify, Render,
+        domínios e checklist de lançamento.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>07 — Monetização</strong>
+      <p>
+        Validação, Micro-SaaS, assinaturas,
+        pagamento único e landing pages.
+      </p>
+    </article>
+    <article class="chapter">
+      <strong>🎁 Recursos extras</strong>
+      <p>
+        Cheat Sheet, template de documentação
+        e glossário para Vibe Coders.
+      </p>
+    </article>
+  </div>
+</div>
+  </section>
+  <!-- BONUS -->
+  <section class="bonus" id="bonus">
+<div class="container">
+  <div class="section-title">
+    <h2>
+      🎁 E ainda tem bônus
+    </h2>
+    <p>
+      Materiais complementares para facilitar
+      sua jornada.
+    </p>
+  </div>
+  <div class="bonus-list">
+    <div class="bonus-item">
+      <span>⚡</span>
+      <div>
+        <strong>Cheat Sheet para Vibe Coders</strong>
+        <p>
+          Atalhos, comandos e referências úteis.
+        </p>
+      </div>
+    </div>
+    <div class="bonus-item">
+      <span>📝</span>
+      <div>
+        <strong>Template de Prompt para README</strong>
+        <p>
+          Modelo para documentar seus projetos.
+        </p>
+      </div>
+    </div>
+    <div class="bonus-item">
+      <span>📖</span>
+      <div>
+        <strong>Glossário do Vibe Coder</strong>
+        <p>
+          Termos técnicos explicados de forma simples.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- PÚBLICO -->
+  <section>
+<div class="container audience">
+  <div class="section-title">
+    <h2>
+      Para quem é?
+    </h2>
+    <p>
+      O material foi pensado para quem quer explorar
+      o desenvolvimento de produtos com auxílio da IA.
+    </p>
+  </div>
+  <ul>
+    <li>Programadores iniciantes</li>
+    <li>Pessoas interessadas em Inteligência Artificial</li>
+    <li>Empreendedores digitais</li>
+    <li>Freelancers</li>
+    <li>Criadores de aplicativos e ferramentas</li>
+    <li>Profissionais de tecnologia</li>
+    <li>Pessoas interessadas em SaaS</li>
+    <li>Criadores que querem experimentar Vibe Coding</li>
+  </ul>
+</div>
+  </section>
+  <!-- OFERTA -->
+  <section class="offer">
+<div class="container">
+  <div class="offer-card">
+    <div class="badge">
+      ACESSO IMEDIATO
+    </div>
+    <h2>
+      Comece a explorar o Vibe Coding
+    </h2>
+    <p>
+      Um guia direto para entender como a IA
+      pode participar da criação de produtos digitais.
+    </p>
+    <div class="price">
+      R$ 19,90
+      <small>pagamento único</small>
+    </div>
+    <a
+      href="https://pay.hotmart.com/F107872677P?checkoutMode=2"
+      class="cta hotmart-fb hotmart__button-checkout"
+      onclick="return false;">
+      🚀 Quero acessar o guia
+    </a>
+    <p class="offer-note">
+      Pagamento processado pela Hotmart.
+    </p>
+  </div>
+</div>
+  </section>
+  <!-- FAQ -->
+  <section id="faq">
+<div class="container faq">
+  <div class="section-title">
+    <h2>
+      Perguntas frequentes
+    </h2>
+  </div>
+  <details>
+    <summary>
+      Preciso saber programar?
+    </summary>
+    <p>
+      Não é necessário ser um programador avançado.
+      Conhecimentos básicos de lógica podem ajudar,
+      mas o material apresenta os conceitos de forma
+      acessível.
+    </p>
+  </details>
+  <details>
+    <summary>
+      O que é Vibe Coding?
+    </summary>
+    <p>
+      É uma abordagem de desenvolvimento em que
+      ferramentas de Inteligência Artificial participam
+      ativamente da criação e evolução do código.
+    </p>
+  </details>
+  <details>
+    <summary>
+      Quais ferramentas são abordadas?
+    </summary>
+    <p>
+      O conteúdo apresenta ferramentas como Cursor,
+      Bolt.new, v0.dev, Replit, Supabase, Firebase,
+      Vercel, Netlify e Render.
+    </p>
+  </details>
+  <details>
+    <summary>
+      O guia ensina a ganhar dinheiro com IA?
+    </summary>
+    <p>
+      O material aborda modelos de monetização de
+      produtos digitais, como Micro-SaaS, assinaturas
+      e pagamento único. Não há promessa de renda
+      ou resultado financeiro.
+    </p>
+  </details>
+  <details>
+    <summary>
+      Como recebo o produto?
+    </summary>
+    <p>
+      Após a confirmação da compra, o acesso é
+      disponibilizado pela Hotmart.
+    </p>
+  </details>
+</div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+<p>
+  © <span id="year"></span>
+  Sonhador Digital de Sucesso.
+  Todos os direitos reservados.
+</p>
+  </div>
+</footer>
+<!-- CTA MOBILE -->
+
+🚀 Quero acessar
+<script>
+  /* =========================
+     MENU MOBILE
+  ========================= */
+  const menuButton =
+    document.getElementById("menuButton");
+  const nav =
+    document.getElementById("nav");
+  menuButton.addEventListener("click", () => {
+    const active =
+      nav.classList.toggle("active");
+    menuButton.setAttribute(
+      "aria-expanded",
+      active
+    );
+  });
+  /* =========================
+     FECHAR MENU AO CLICAR
+  ========================= */
+  document.querySelectorAll("#nav a")
+    .forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        menuButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+      });
+    });
+  /* =========================
+     ANO AUTOMÁTICO
+  ========================= */
+  document.getElementById("year")
+    .textContent = new Date().getFullYear();
+  /* =========================
+     SCROLL SUAVE
+  ========================= */
+  document.querySelectorAll('a[href^="#"]')
+    .forEach(anchor => {
+      anchor.addEventListener("click", function(event) {
+        const target =
+          document.querySelector(this.getAttribute("href"));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+</script>
+</body>
+</html>
